@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeagueOfLegends_application
 {
-   static class JsonConverter
+   static class DataLayer_Lol
     {
         private const string key = "";
         //change object to whatever you named the class
@@ -22,10 +22,14 @@ namespace LeagueOfLegends_application
         {
             return null;
         }
-        static public object getGameRecommendedItemBuild()
+        static public List<int> getGameRecommendedItemBuild(object champion)
         {
             return null;
         }
+        static public int getPing()
+        {
+            return 0;
+        } 
 
 
     }
