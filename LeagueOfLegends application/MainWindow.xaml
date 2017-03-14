@@ -13,7 +13,9 @@
          xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    
     <Grid>
+        <RadioButton FontSize="20" x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="145,71,0,0" VerticalAlignment="Center" Height="138" Width="222"/>
+        <Grid x:Name="container" HorizontalAlignment="Left" Height="259" Margin="139,62,0,-0.2" VerticalAlignment="Top" Width="228"/>
+        <Button x:Name="button" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="34,25,0,0" VerticalAlignment="Top" Width="148" Height="97"/>
     </Grid>
 </Window>

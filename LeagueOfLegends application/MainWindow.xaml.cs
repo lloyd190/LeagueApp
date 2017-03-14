@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 namespace LeagueOfLegends_application
 {
     /// <summary>
@@ -23,11 +22,17 @@ namespace LeagueOfLegends_application
         public MainWindow()
         {
             InitializeComponent();
+            Button myButton = new Button();
+            // Set properties.
+            myButton.Content = "Click Me!";
+
+            // Add created button to a previously created container.
+            container.Children.Add(myButton);
         }
 
-        private void ClockItemButton_Checked(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            DataLayer_Lol.getPlayer("illumi Trackball");
         }
     }
 }
