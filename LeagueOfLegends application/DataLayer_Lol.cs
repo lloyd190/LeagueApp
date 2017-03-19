@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace LeagueOfLegends_application
 {
-   static class DataLayer_Lol
+    class DataLayer_Lol
     {
         
         //change method to whatever
-        static public object getCurrentChampion()
+         public object getCurrentChampion()
         {
             return null;
         }
-        static public RiotSharp.SummonerEndpoint.Summoner getPlayer(string name)
+         public RiotSharp.SummonerEndpoint.Summoner getPlayer(string name)
         {
            var api = RiotApi.GetInstance("RGAPI-2529f152-1b83-4eda-848f-699780609ad4");
             var summoner = (RiotSharp.SummonerEndpoint.Summoner)null;
@@ -31,15 +31,15 @@ namespace LeagueOfLegends_application
             return summoner;
 
         }
-        static public object getChampionById(int id)
+         public object getChampionById(int id)
         {
             return null;
         }
-        static public List<int> getGameRecommendedItemBuild(object champion)
+         public List<int> getGameRecommendedItemBuild(object champion)
         {
             return null;
         }
-        static public int getPing()
+         public int getPing()
         {
             return 0;
         } 
