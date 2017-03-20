@@ -27,7 +27,6 @@ namespace LeagueOfLegends_application
             myButton.Content = "Click Me!";
 
             // Add created button to a previously created container.
-            container.Children.Add(myButton);
         }
         String n = "IWILLBOOTYTOUCH";
         RiotSharp.Region r = RiotSharp.Region.euw;

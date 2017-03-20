@@ -23,10 +23,6 @@ namespace LeagueOfLegends_application
             try
             {
              summoner = api.GetSummoner(region, name);
-                if (summoner == null)
-                {
-                    return nu;
-                } 
                
             }
             catch (RiotSharpException ex)
