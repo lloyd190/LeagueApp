@@ -29,10 +29,20 @@ namespace LeagueOfLegends_application
             // Add created button to a previously created container.
             container.Children.Add(myButton);
         }
-
+        String n = "IWILLBOOTYTOUCH";
+        RiotSharp.Region r = RiotSharp.Region.euw;
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            DataLayer_Lol.getPlayer("illumi Trackball");
+            DataLayer_Lol h = new DataLayer_Lol();
+            
+            if (h.getPlayer(n, r) == null)
+            {
+                Console.WriteLine("This summoner doesn't exist in this Region");
+            }
+            else
+            {
+              Console.WriteLine(h.getPlayer("IWILLBOOTYTOUCH", RiotSharp.Region.euw).Region);
+            }
         }
     }
 }

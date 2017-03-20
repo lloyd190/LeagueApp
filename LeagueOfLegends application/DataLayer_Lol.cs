@@ -16,13 +16,18 @@ namespace LeagueOfLegends_application
         {
             return null;
         }
-         public RiotSharp.SummonerEndpoint.Summoner getPlayer(string name)
+         public RiotSharp.SummonerEndpoint.Summoner getPlayer(string name, RiotSharp.Region region)
         {
            var api = RiotApi.GetInstance("RGAPI-2529f152-1b83-4eda-848f-699780609ad4");
             var summoner = (RiotSharp.SummonerEndpoint.Summoner)null;
             try
             {
-             summoner = api.GetSummoner(Region.euw, "illumi Trackball");
+             summoner = api.GetSummoner(region, name);
+                if (summoner == null)
+                {
+                    return nu;
+                } 
+               
             }
             catch (RiotSharpException ex)
             {
