@@ -1,4 +1,4 @@
-﻿<Window x:Class="LeagueOfLegends_application.MainWindow"
+﻿<Window  x:Class="LeagueOfLegends_application.MainWindow"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
          TextElement.FontWeight="Regular"
@@ -11,15 +11,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LeagueOfLegends_application"
          xmlns:gif="http://wpfanimatedgif.codeplex.com"
+
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Viewbox Margin="0,0,2,0">
-        <Grid Margin="0,0,2,0" Width="523">
-            <Button x:Name="button" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,84,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
-            <Button x:Name="button_Copy" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,131,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
-            <Button x:Name="button_Copy1" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,178,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
-            <Button x:Name="button_Copy2" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,225,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
-            <Button x:Name="button_Copy3" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,272,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
-        </Grid>
-    </Viewbox>
+    <Grid>
+    </Grid>
 </Window>

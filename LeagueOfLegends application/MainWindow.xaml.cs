@@ -25,6 +25,7 @@ namespace LeagueOfLegends_application
             Button myButton = new Button();
             // Set properties.
             myButton.Content = "Click Me!";
+            Console.WriteLine("helllooooooo");
 
             // Add created button to a previously created container.
         }
