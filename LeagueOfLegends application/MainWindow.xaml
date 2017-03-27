@@ -14,6 +14,23 @@
 
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+<<<<<<< Updated upstream
     <Grid>
     </Grid>
+=======
+<<<<<<< HEAD
+    <Viewbox Margin="0,0,2,0">
+        <Grid Margin="0,0,2,0" Width="523">
+            <Button x:Name="button" Content="Ping" Click="button_Click" HorizontalAlignment="Left" Margin="0,86,0,0" VerticalAlignment="Top" Width="148" Height="50"/>
+            <Button x:Name="button_Copy" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,136,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
+            <Button x:Name="button_Copy1" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,183,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
+            <Button x:Name="button_Copy2" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,225,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
+            <Button x:Name="button_Copy3" Content="Button" Click="button_Click" HorizontalAlignment="Left" Margin="0,272,0,0" VerticalAlignment="Top" Width="148" Height="47"/>
+        </Grid>
+    </Viewbox>
+=======
+    <Grid>
+    </Grid>
+>>>>>>> WorkInHere
+>>>>>>> Stashed changes
 </Window>

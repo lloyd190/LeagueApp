@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,18 +31,21 @@ namespace LeagueOfLegends_application
             // Add created button to a previously created container.
         }
         String n = "IWILLBOOTYTOUCH";
-        RiotSharp.Region r = RiotSharp.Region.euw;
+        RiotSharp.Region r = RiotSharp.Region.na;
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            string a = new Ping().Send("104.160.131.3").RoundtripTime.ToString() + "ms";
             DataLayer_Lol h = new DataLayer_Lol();
             
             if (h.getPlayer(n, r) == null)
             {
+                Console.WriteLine(a);
                 Console.WriteLine("This summoner doesn't exist in this Region");
             }
             else
             {
-              Console.WriteLine(h.getPlayer("IWILLBOOTYTOUCH", RiotSharp.Region.euw).Region);
+                Console.WriteLine(a);
+                Console.WriteLine(h.getPlayer("IWILLBOOTYTOUCH", RiotSharp.Region.na).Region);
             }
         }
     }
